@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKLIST</title>
+    <script src="https://kit.fontawesome.com/112ea40779.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container" style="width: 500px; margin-top: 19px;">
+        <h1><i class="fas fa-book-open text-primary"></i>My<span class="text-primary">Book</span>List</h1>
+    <form id="book-form">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Title</label>
+          <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Author</label>
+          <input type="text" class="form-control" id="author" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">ISBN#</label>
+          <input type="text" class="form-control" id="isbn">
+        </div>
+        <div class="form-group form-check">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Add Book</button>
+      </form>
+      <table class="table table-striped" style="margin-top: 15px;">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN#</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+      </div>
+<script src="app.js"></script>
+</body>
+</html>
